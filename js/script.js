@@ -128,14 +128,21 @@ bodem2.addEventListener("click", cupSterren);
 bodem1.addEventListener("click", cupBliksem);
 
 
-// onthouden en doorzetten naar nieuwe pagina.
-var readyButton = document.querySelector(".ready");
+// onthouden en doorzetten naar nieuwe pagina + audio afspelen.
 
-function ready(){
-    window.location=`gekozen.html?drolStatus=${drolStatus}&versieringStatus=${versieringStatus}&cupStatus=${cupStatus}`;
-}
+const audio = new Audio (scr="./audio/sparkle.mp3");
+const buttons = document.querySelectorAll("button");
 
-readyButton.addEventListener("click", ready);
+buttons.forEach(button => { 
+    button.addEventListener("click", () => {
+        audio.play();
+        setTimeout(() => {
+            window.location=`gekozen.html?drolStatus=${drolStatus}&versieringStatus=${versieringStatus}&cupStatus=${cupStatus}`;
+
+        }, 1500);
+    })
+})
+
 
 
 // bijles van quinten kok //
