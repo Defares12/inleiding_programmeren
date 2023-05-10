@@ -114,7 +114,7 @@ function cupBliksem() {
 
 function cupChecker(){
     if (cupStatus == 1){
-     Cup.scr = "./images/stippencup.png";
+     Cup.src = "./images/stippencup.png";
     }
     else if (cupStatus == 2){
      Cup.src = "./images/sterrencup.png";
