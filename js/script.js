@@ -40,10 +40,10 @@ function drolChecker(){
         drol.src = `./images/${drolArray[drolStatus-1]}smaak.png`;   
     }
     else if (drolStatus == 2){
-        drol.src = `../images/${drolArray[drolStatus-1]}smaak.png`;
+        drol.src = `./images/${drolArray[drolStatus-1]}smaak.png`;
     }
     else if (drolStatus == 3){
-        drol.src = `../images/${drolArray[drolStatus-1]}smaak.png`;
+        drol.src = `./images/${drolArray[drolStatus-1]}smaak.png`;
     }
 }
 
@@ -76,13 +76,13 @@ function versieringRoos() {
 
 function versieringChecker(){
     if (versieringStatus == 1){
-        versiering.src = `../images/${versieringArray[versieringStatus-1]}versiering.png`; 
+        versiering.src = `./images/${versieringArray[versieringStatus-1]}versiering.png`; 
     }
     else if (versieringStatus == 2){
-        versiering.src = `../images/${versieringArray[versieringStatus-1]}versiering.png`; 
+        versiering.src = `./images/${versieringArray[versieringStatus-1]}versiering.png`; 
     }
     else if (versieringStatus == 3){
-versiering.src = `../images/${versieringArray[versieringStatus-1]}versiering.png`; 
+versiering.src = `./images/${versieringArray[versieringStatus-1]}versiering.png`; 
     }
 }
 
@@ -114,13 +114,13 @@ function cupBliksem() {
 
 function cupChecker(){
     if (cupStatus == 1){
-     Cup.scr = "../images/stippencup.png";
+     Cup.scr = "./images/stippencup.png";
     }
     else if (cupStatus == 2){
-     Cup.src = "../images/sterrencup.png";
+     Cup.src = "./images/sterrencup.png";
     }
     else if (cupStatus == 3){
-     Cup.src = "../images/bliksemcup.png";
+     Cup.src = "./images/bliksemcup.png";
     }
 }
 bodem3.addEventListener("click", cupStippen);
