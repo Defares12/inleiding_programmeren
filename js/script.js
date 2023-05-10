@@ -37,7 +37,7 @@ function paarseDrol() {
 
 function drolChecker(){
     if (drolStatus == 1){
-        drol.src = `/images/${drolArray[drolStatus-1]}smaak.png`;   
+        drol.src = `./images/${drolArray[drolStatus-1]}smaak.png`;   
     }
     else if (drolStatus == 2){
         drol.src = `../images/${drolArray[drolStatus-1]}smaak.png`;
